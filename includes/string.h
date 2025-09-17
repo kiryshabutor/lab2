@@ -11,11 +11,15 @@ private:
 
 public:
     String();
+
     explicit String(const char *str);
+
     String(const String &other);
+
     ~String();
 
     String &operator=(const String &other);
+
     String &operator+=(const String &other);
 
     friend std::ostream &operator<<(std::ostream &os, const String &str) {
@@ -39,4 +43,3 @@ public:
 
     const char *c_str() const;
 };
-
