@@ -4,4 +4,3 @@ int main() {
     App::run();
     return 0;
 }
-
