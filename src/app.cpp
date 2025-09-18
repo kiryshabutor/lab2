@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void App::run() const {
+void App::run() {
     String s1;
     String s2;
 

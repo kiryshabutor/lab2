@@ -38,8 +38,8 @@ String &String::operator=(const String &other) {
 }
 
 String &String::operator+=(const String &other) {
-    size_t newLength = length + other.length;
-    auto newData = new char[newLength + 1];
+    const size_t newLength = length + other.length;
+    const auto newData = new char[newLength + 1];
 
     copy(data, data + length, newData);
     copy(other.data, other.data + other.length + 1, newData + length);

@@ -7,5 +7,5 @@ public:
 
     ~App() = default;
 
-    void run() const;
+    static void run();
 };
